@@ -15,8 +15,9 @@ void rotateMatrixcounter(int mat[][N])
 
             int temp = mat[x][y];
 
-            mat[x][y] = mat[y][N - 1 - x];
 
+            mat[x][y] = mat[y][N - 1 - x];
+            
             
             mat[y][N - 1 - x] = mat[N - 1 - x][N - 1 - y];
 
@@ -65,10 +66,10 @@ void displayMatrix(int mat[N][N]) {
 int main()
 {
     int mat[N][N] = {
-    {0,1,0,0},
-    {0,1,0,0},
-    {0,1,0,0},
-    {0,1,0,0}
+    {2,1,0,0},
+    {3,1,0,0},
+    {4,1,0,0},
+    {5,1,0,0}
     };
     bool Debug = true;
     int userinput;
